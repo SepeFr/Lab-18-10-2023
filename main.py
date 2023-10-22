@@ -265,9 +265,10 @@ def is_sorted_half(a: list) -> bool:
             elif not increasing and (a[index] > a[index +1]):
                 return False
 
-
+    # Se l'ordine non è stato cambiato, allora dobbiamo ritornare False
     if not order_changed:
         return False
+    # In tutti gli altri casi, se non abbiamo incontrato anomalie ritorniamo True
     return True 
 
             
